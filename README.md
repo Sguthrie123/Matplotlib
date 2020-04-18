@@ -1,57 +1,75 @@
-# Matplotlib
-matplotlib homework 
-# Unit 5 - Intro to Matplotlib
+# Matplotlib Homework - The Power of Plots
 
-## Objectives
+## Background
 
-* Understand Matplotlib's pyplot interface.
-* Be able to create line; bar; scatter; and pie charts.
-* Be familiar with basic plot configuration options, such as `xlim` and `ylim`.
-* Feel comfortable creating plots using the `DataFrame.plot()` method.
-* Understand the advantages and disadvantages of creating charts using the `DataFrame.plot()` method.
-* Be able to work through a complex data set using Pandas and then chart some visualizations based upon the cleaned DataFrame.
-* Be able to define **mean**, **median**, and **mode**, and choose which one is most appropriate to describe a given data set.
-* Be able to explain the meaning of variance and standard deviation.
-* Be able to describe standard error and the difference between a sample and a population.
-* Be able to add error bars to their plots.
-* Be able to fit lines to their data.
+What good is data without a good plot to tell the story?
 
-### Key Activities
+So, let's take what you've learned about Python Matplotlib and apply it to a real-world situation and dataset:
 
-* [Basic Plot](class%20materials/session%201/Activities/02-Stu_NJTemp)
+![Laboratory](Images/Laboratory.jpg)
 
-* [Bar Charts](class%20materials/session%201/Activities/08-Stu_PyBars)
+While your data companions rushed off to jobs in finance and government, you remained adamant that science was the way for you. Staying true to your mission, you've joined Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
-* [Scatter Plots](class%20materials/session%201/Activities/12-Stu_ScatterPy)
+As a senior data analyst at the company, you've been given access to the complete data from their most recent animal study. In this study, 250 mice identified with SCC tumor growth were treated through a variety of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. You have been tasked by the executive team to generate all of the tables and figures needed for the technical report of the study. The executive team also has asked for a top-level summary of the study results.
 
-* [Pandas Plotting](class%20materials/session%202/Activities/03-Stu_BattlingKings)
+## Instructions
 
-* [Plotting Groups](class%20materials/session%202/Activities/05-Stu_BikeTrippin)
+Your tasks are to do the following:
 
-* [Plotting Multi-lines](class%20materials/session%202/Activities/07-Ins_PandasMultiLine)
+* Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
 
-* [Summary Statistics](class%20materials/session%203/Activities/01-Ins_Summary_Statistics)
+* Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the number of data points for each treatment regimen.
 
-* [Quartiles](class%20materials/session%203/Activities/02-Ins_Quartiles_and_Outliers)
+  * **NOTE:** These plots should look identical.
 
-* [Standard Error](class%20materials/session%203/Activities/05-Par_Standard_Error)
+* Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
 
-* [Correlation](class%20materials/session%203/Activities/07-Stu_Correlation_Conquerors)
+  * **NOTE:** These plots should look identical.
 
-* [Regression](class%20materials/session%203/Activities/09-Stu_Fits_and_Regression)
+* Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
 
-### Helpful Links
+* Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
 
-* [Numpy](http://www.numpy.org/)
+  **Hint**: All four box plots should be within the same figure. Use this [Matplotlib documentation page](https://matplotlib.org/gallery/pyplots/boxplot_demo_pyplot.html#sphx-glr-gallery-pyplots-boxplot-demo-pyplot-py) for help with changing the style of the outliers.
 
-* [Matplotlib Gallery](https://matplotlib.org/gallery.html)
+* Generate a line plot of time point versus tumor volume for a single mouse treated with Capomulin.
 
-* [Pandas Plotting](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
+* Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
 
-* [Alternatives to Pie Charts](http://www.storytellingwithdata.com/blog/2014/06/alternatives-to-pies)
+* Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
 
-- - -
+* Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+
+Here are some final considerations:
+
+* You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, _x_-axis and _y_-axis limits, etc.
+
+* See the [starter workbook](Pymaceuticals/pymaceuticals_starter.ipynb) for help on what modules to import and expected format of the notebook.
+
+## Hints and Considerations
+
+* Be warned: These are very challenging tasks. Be patient with yourself as you trudge through these problems. They will take time and there is no shame in fumbling along the way. Data visualization is equal parts exploration, equal parts resolution.
+
+* You have been provided a starter notebook. Use the code comments as a reminder of steps to follow as you complete the assignment.
+
+* Don't get bogged down in small details. Always focus on the big picture. If you can't figure out how to get a label to show up correctly, come back to it. Focus on getting the core skeleton of your notebook complete. You can always revisit old problems.
+
+* While you are trying to complete this assignment, feel encouraged to constantly refer to Stack Overflow and the Pandas documentation. These are needed tools in every data analyst's tool belt.
+
+* Remember, there are many ways to approach a data problem. The key is to break up your task into micro tasks. Try answering questions like:
+
+  * How does my DataFrame need to be structured for me to have the right _x_-axis and _y_-axis?
+
+  * How do I build a basic scatter plot?
+
+  * How do I add a label to that scatter plot?
+
+  * Where would the labels for that scatter plot come from?
+
+  Again, don't let the magnitude of a programming task scare you off. Ultimately, every programming problem boils down to a handful of bite-sized tasks.
+
+* Get help when you need it! There is never any shame in asking. But, as always, ask a _specific_ question. You'll never get a great answer to "I'm lost."
 
 ### Copyright
 
-Data Boot Camp © 2019. All Rights Reserved.
+Trilogy Education Services © 2019. All Rights Reserved.
